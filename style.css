@@ -1,0 +1,158 @@
+/* Konteineris, kuriame bus paveiksliukas ir ant hover atsirandantis fonas */
+.item-img-wrap {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+/* Jei naudosit float, čia clearfix klasė, kurią reiktų uždėti tėvui, kurio vaikai turi float taisyklę */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+body{
+    margin: 0 auto;
+    height: 100%;
+}
+.container{
+    margin: 0 auto;
+    max-width: 960px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.pirmas{
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    min-width: 600px;
+    height: 100px;  
+}
+.antras{
+    padding: 40px;
+    position: relative;
+}
+.blogas{
+    margin:0 15px 0 15px;
+    padding: 0 5px 0 5px;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+.div80{
+    height: 80px;
+}
+.container-text{
+    margin: 0 auto;
+    max-width: 960px;
+    min-width: 400px;
+    width: 100%;
+    height: 300px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    border-bottom: 1px dashed rgb(229, 229, 229);
+    margin-bottom: 100px;
+    
+}
+.img-margin{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 20px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.img-1{
+    height: 200px;
+    width: 300px;
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+.img-2{
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
+.img-container{
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 300px;
+    opacity: 0;
+}
+.img-margin:hover .img-1 {
+    transform: scale(1.1);
+    transition: all 200ms linear;
+}
+
+.img-container:hover{
+    cursor: pointer;
+    opacity:0.8;
+    transition: all 200ms linear;
+    background-color: #000;
+}
+.text-container{
+    display: inline-block;
+    width: 580px;
+    vertical-align: top;
+    padding-left: 25px;
+}
+.navbar ul{
+    list-style-type: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 0;
+}
+.navbar{
+    width: 580px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+.navbar ul li{
+    display: inline-block;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: gray;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 15px;
+}
+.stilius-teksto h2{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-weight: 350;
+}
+.stilius-teksto p{
+    color: grey;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+button{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #f44336;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+button:hover {
+    background-color: white;
+    color: #f44336;
+    border: 1px solid #f44336;
+}
