@@ -1,0 +1,21 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+.app{
+    height: 100%;
+    display: flex;
+}
+aside{
+    flex: 0 0 200px;
+    background-color: #444C63;
+}
+main{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.photos{
+    flex: 1;
+    overflow-y: scroll;
+}
